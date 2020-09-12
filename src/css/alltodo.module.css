@@ -1,0 +1,139 @@
+.card {
+  /* color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: sans-serif;
+}
+
+.main {
+  
+  width: 70%;
+  height: auto;
+  text-overflow: ellipsis;
+  background-color: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  text-align: center;
+  display: flex;
+  padding-top: 7px;
+  padding-bottom:9px;
+  flex-direction: column;
+  justify-content: center;
+  /* text-transform: uppercase; */
+  font-size: large;
+  /* left: 50%; */
+  border-radius: 13px;
+  /* transform: translate(-50%,-50%); */
+  /* box-shadow: 0 20px 50px rgba(255, 255, 255, 0.5); */
+  overflow: hidden;
+  
+}
+
+.main span:nth-child(1) {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  height: 4px;
+  animation: animate1 2s linear 0s infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.main span:nth-child(2) {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 4px;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  height: 100%;
+  animation: animate2 2s linear 0s infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.main span:nth-child(3) {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  width: 100;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  height: 4px;
+  animation: animate3 2s linear 0s infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.main span:nth-child(4) {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  width: 4px;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  height: 100%;
+  animation: animate4 2s linear 0s infinite;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.done {
+  display: block;
+  border: 3px solid #002871;
+  margin-right: auto;
+  margin-top: auto;
+  /* margin-bottom: auto; */
+  padding: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: large;
+  border-radius: 13px;
+  text-decoration: none;
+  color: white;
+  color:#002871;
+}
+
+.done:hover {
+  background-color: #28b5f4;
+  color: white;
+  /* box-shado; */
+}
